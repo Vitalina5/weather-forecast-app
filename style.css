@@ -1,0 +1,152 @@
+body{
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(82, 55, 78, 0.6), rgba(104, 104, 98, 0.8)), url(""); 
+    margin: 0; 
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#input {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid #835971;
+    outline: none;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#input:focus {
+    background-color: rgb(123, 106, 116, 0.7);
+}
+
+.red-input:focus {
+    background-color: #74a7c9;
+}
+
+#input::-moz-placeholder { 
+    color: #816f79;
+}
+  
+#input::-webkit-input-placeholder {
+    color: #fff; 
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cityCountry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#city{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#country {
+    margin: 15px;
+}
+
+#region {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#date {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+#temperature {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+
+#temp {
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 5px 5px 6px #000000;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feelsLike {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+
+#conditions {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+#variation {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+@media all and (max-width: 500px) {
+
+    #header {
+        margin-top: 50px;
+    }
+
+    #input {
+         width: 60vw;
+         font-size: 20px;
+         margin-bottom: 20px;
+    }
+
+    #city, #region {
+        font-size: 20px;
+    }
+
+    #date {
+        font-size: 20px;
+    }
+
+    #feelsLike , #conditions {
+        font-size: 20px;
+    }  
+
+}    
